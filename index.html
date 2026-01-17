@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhaust | Портфолио</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container navbar__content">
+            <div class="logo">Exhaust<span class="primary-text">.</span></div>
+            <div class="nav-links">
+                <a href="#about">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container" data-aos="fade-zoom-in" data-aos-duration="1200">
+            <h1 class="hero__title">Создаю код, который <br> <span class="primary-text">решает задачи.</span></h1>
+            <p class="hero__subtitle">Привет, я Exhaust. Программист, энтузиаст и исследователь технологий.</p>
+            <div class="hero__cta">
+                <a href="#projects" class="btn btn--primary">Смотреть проекты</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__image-wrapper" data-aos="fade-right">
+                        <img src="image/me.jpg" alt="Exhaust Photo" class="about__image">
+                    </div>
+                    <div class="about__info" data-aos="fade-left">
+                        <h2 class="section-title">Кто я такой</h2>
+                        <div class="about__text">
+                            <p>Я глубоко увлечен миром IT. Мой путь — это постоянное изучение нового: от низкоуровневого программирования до современных веб-интерфейсов.</p>
+                            <p>Мой стек технологий постоянно растет, но сейчас я фокусируюсь на этих направлениях:</p>
+                        </div>
+                        <ul class="skills-tags">
+                            <li class="skill-tag">Web Development</li>
+                            <li class="skill-tag">Python</li>
+                            <li class="skill-tag">JavaScript</li>
+                            <li class="skill-tag">C / C++</li>
+                            <li class="skill-tag">Arduino</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Мои проекты</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <a href="https://github.com/Zhuravlev3906/Fedora-Rice" target="_blank" class="card-link" data-aos="fade-up" data-aos-delay="100">
+                        <article class="card">
+                            <div class="card__image-container">
+                                <img src="image/projects/fedora-rice.png" alt="Fedora Rice" class="card__image">
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Fedora rice 💻</h3>
+                                <p class="card__desc">Привет! Это мой уютный уголок настроек (dotfiles) для Fedora 43. Я собрал здесь всё, что помогает мне комфортно программировать, учиться и общаться, придерживаясь принципа KISS (Keep It Simple, Stupid).</p>
+                                <div class="card__footer">
+                                    <span class="card__tag">Linux</span>
+                                    <span class="card__tag">Rice</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact" data-aos="zoom-in-up">
+            <div class="container">
+                <div class="contact__box">
+                    <h2 class="section-title">Связаться со мной</h2>
+                    <p class="contact__text">Всегда открыт для новых идей и интересных проектов.</p>
+                    <div class="contact__links">
+                        <a href="https://github.com/Zhuravlev3906" target="_blank" class="btn btn--outline">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://t.me/iAmExhaust" target="_blank" class="btn btn--primary">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                        <a href="mailto:zhuravlev3906@yandex.ru" class="btn btn--outline">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Exhaust. Создано с умом и страстью к коду.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 120 
+        });
+    </script>
+</body>
+</html>
